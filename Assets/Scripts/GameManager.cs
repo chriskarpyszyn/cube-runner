@@ -8,13 +8,16 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     public float restartDelay = 2f;
 
-    public void CompleteLevel() {
+    public void CompleteLevel()
+    {
         completeLevelUI.SetActive(true);
     }
 
-    public void EndGame() {
+    public void EndGame()
+    {
 
-        if (gameHasEnded == false) {
+        if (gameHasEnded == false)
+        {
             gameHasEnded = true;
 
             //todo-ck end game screen
@@ -24,9 +27,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Restart() {
+    void Restart()
+    {
         // SceneManager.LoadScene("Level01");
-        
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
