@@ -406,7 +406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 45.8}
+  m_AnchoredPosition: {x: 0, y: 176}
   m_SizeDelta: {x: 635.3639, y: 233.9894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670931530
@@ -431,18 +431,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bc99c8ae53d31e549852fbfa4f95cb26, type: 3}
-    m_FontSize: 45
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 50
+    m_MinSize: 0
+    m_MaxSize: 65
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CLEVER CUBE TITLE
+  m_Text: qBreaker
 --- !u!222 &670931531
 CanvasRenderer:
   m_ObjectHideFlags: 0

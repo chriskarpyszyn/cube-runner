@@ -14,5 +14,7 @@ public class Destructable : MonoBehaviour
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+
+        //todo-ck add a timer to 'destroy' the pieces when they're offscreen
     }
 }
