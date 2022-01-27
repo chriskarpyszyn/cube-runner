@@ -10,7 +10,6 @@ public class Destructable : MonoBehaviour
     {
         if (collisionInfo.collider.tag == "Player")
         {
-            Debug.Log("Test");
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
         }

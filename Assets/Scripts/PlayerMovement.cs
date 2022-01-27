@@ -42,4 +42,9 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+
+    public void DisableMovement()
+    {
+        enabled = false;
+    }
 }

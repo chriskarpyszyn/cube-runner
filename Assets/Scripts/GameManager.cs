@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
 
+            FindObjectOfType<PlayerMovement>().DisableMovement();
+
             //todo-ck end game screen
             Debug.Log("GAME OVER");
 
