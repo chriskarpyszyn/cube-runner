@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
+            FindObjectOfType<PlayerMovement>().DisableMovement();
 
             //todo-ck end game screen
             Debug.Log("GAME OVER");
