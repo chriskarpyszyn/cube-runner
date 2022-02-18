@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float forwardForce = 8000f;
     public float sidewaysForce = 120f;
+    public float downwardForce = 120f;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+
+        if (Input.GetKey("space"))
+        {
+            //todo -no force if touching the ground
+            rb.AddForce(0, -downwardForce * Time.deltaTime, 0, ForceMode.VelocityChange);
         }
 
         //todo-ck don't hardcode numbers
