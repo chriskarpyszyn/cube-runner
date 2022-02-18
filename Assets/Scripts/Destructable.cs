@@ -8,7 +8,7 @@ public class Destructable : MonoBehaviour
     //called when rigid body collides with another
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collisionInfo.collider.tag == "Player")
+        if (collisionInfo.collider.tag == "Player" || collisionInfo.collider.tag == "Destroyed")
         {
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
